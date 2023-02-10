@@ -678,3 +678,28 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+
+.icons{
+    text-align: center;
+  }
+  
+  .icons a{
+    text-align: center;
+    height:2px;
+    width: 4.5rem;
+    line-height: 2px;
+    text-align: center;
+    border-radius: 20%;
+    color:var(--violet);
+    border:.2rem solid var(--violet);
+    font-size: 2rem;
+    margin:0 .1rem;
+    transition: .2s linear;
+  }
+  
+  .icons a:hover{
+    color:#e20808;
+    background:var(--pink);
+    border-color: var(--pink);
+  }
