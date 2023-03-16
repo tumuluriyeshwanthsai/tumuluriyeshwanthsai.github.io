@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    /* font-smoothing: antialiased; */
+  }
+  
+  @font-face {
+      font-family: 'Shopper';
+      src: url('http://www.shopperfont.com/font/Shopper-Std.ttf');
+  }
+  
+.shopper {
+    text-transform: lowercase;
+    font: 2em 'Shopper', sans-serif;
+    line-height: 0.5em;
+    display: inline-block;
+  }
+  
+  
+  
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+  
+  p {
+    font-size: 1.5em;
+    color: #8a8a8a;
+  }
+  
+  input {
+    border: 0.3em solid #bbc3c6;
+    padding: 0.5em 0.3em; 
+    font-size: 1.4em;
+    color: #8a8a8a;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 9em;
+    width: 100%;
+    overflow: hidden; 
+    margin-right: 1em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container2s {
+    max-width: 75em;
+    width: 95%;
+    margin: 40px auto;  
+    overflow: hidden;
+    position: relative;
+    
+    border-radius: 0.6em;
+    background: #ecf0f1;
+    box-shadow: 0 0.5em 0 rgba(138, 148, 152, 0.2);
+  }
+  
+  .heading {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+    color: #f7f7f7;
+    background: #3551f3;
+  }
+  
+  .cart {
+    margin: 2.5em;
+    overflow: hidden;
+  }
+  
+  .cart.is-closed {
+    height: 0;
+    margin-top: -2.5em;
+  }
+  
+  .table {
+    background: #ffffff;
+    border-radius: 0.6em;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 1.8em;
+  }
+  
+  
+  .layout-inline > * {
+    display: inline-block;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+  
+  .th {
+    background: #35adf3;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .tf {
+    background: #adf335;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1.2em;  
+  }
+  
+  .tf p {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .col {
+    padding: 1em;
+    width: 12%;
+  }
+  
+  .col-pro {
+    width: 44%;
+  }
+  
+  .col-pro > * {
+    vertical-align: middle;
+  }
+  
+  .col-qty {
+    text-align: center;
+    width: 17%;
+  }
+  
+  .col-numeric p {
+    font: bold 1.8em helvetica;
+  }
+  
+  .col-total p {
+    color: #12c8b1;
+  }
+  
+  .tf .col {
+    width: 20%;
+  }
+  
+  .row > div {
+    vertical-align: middle;
+  }
+  
+  .row-bg2 {
+    background: #f7f7f7;
+  }
+  
+  .visibility-cart {
+    position: absolute;
+    color: #fff;
+    top: 0.5em;
+    right: 0.5em;
+    font:  bold 2em arial;
+    border: 0.16em solid #fff;
+    border-radius: 2.5em;
+    padding: 0 0.22em 0 0.25em ;
+  }
+  
+  .col-qty > * {
+    vertical-align: middle; 
+  }
+  
+  .col-qty > input {
+    max-width: 2.6em;
+  }
+  
+  
+  a.qty {
+    width: 1em;
+    line-height: 1em;
+    border-radius: 2em;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    background: #43ace3;  
+    color: #fff;
+  }
+  
+  a.qty:hover {
+    background: #3b9ac6;
+  }
+  
+  .btn {
+    padding: 10px 30px;
+    border-radius: 0.3em;
+    font-size: 1.4em;
+    font-weight: bold;
+    background: #43ace3;
+    color: #fff;
+    box-shadow: 0 3px 0 rgba(59,154,198, 1)
+  }
+  
+  .btn:hover {
+    box-shadow: 0 3px 0 rgba(59,154,198, 0)
+  }
+  
+  .btn-update {
+    float: right;
+    margin: 0 0 1.5em 0;
+  }
+  
+  .transition {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media screen and ( max-width: 755px) {
+    .container {
+      width: 98%;
+    }
+    
+    .col-pro {
+      width: 35%;
+    }
+    
+    .col-qty {
+      width: 22%;
+    }
+    
+    img {
+      max-width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+  
+  @media screen and ( max-width: 591px) {
+    
+  }
+
+  /* footer */
+  .footer {
+    margin-top: 150px;
+    background: #f5f6fc;
+  }
+  
+  .payment,
+  .insta-img,
+  .app-download {
+    margin: 50px auto;
+  }
+  
+  .payment img {
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .insta-img img {
+    width: 75px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .app-download img {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  .footer h5 {
+    margin-bottom: 40px;
+  }
+  
+  .footer h5::before {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background: #4f74e8;
+    top: 80px;
+    position: absolute;
+  }
+  
+  .footer-icons {
+    text-align: right;
+  }
+  
+  .footer-icons .fab {
+    margin: 0 10px auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* for small devices */
+  
+  @media only screen and (max-width: 900px) {
+    .banner-img {
+      margin: 40px auto;
+      width: 80%;
+    }
+  
+    .banner-title {
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .banner-title h1 {
+      font-size: 16px;
+      padding: 5px;
+      line-height: 20px;
+    }
+  
+    .title-style h1 {
+      font-size: 25px;
+    }
+  
+    .fashion-box {
+      margin: -20px 0;
+    }
+  
+    .title-style {
+      margin: 0 auto 80px;
+      height: 120px;
+      width: 50%;
+      min-width: 250px;
+      background: #fff;
+      position: relative;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+    }
+  
+    .sm-bt {
+      margin-bottom: 40px;
+    }
+  
+    .offer img {
+      margin-top: 40px !important;
+      margin-bottom: 0 !important;
+    }
+  
+    .fashion-blog {
+      margin: 100px 0 150px 0;
+    }
+  
+    .footer-icons {
+      text-align: center;
+    }
+  
+    .copyright {
+      text-align: center;
+    }
+  }
